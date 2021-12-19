@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "Process Info",
+			"name": "1.Accedemos aplicación (Process Info)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/5",
 				"method": "GET",
@@ -19,7 +19,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Set Dates",
+			"name": "3.Profesional modifica la selección inicial de medicamentos (Process Set Dates)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/setdates",
 				"method": "POST",
@@ -39,7 +39,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Set Treatment",
+			"name": "4.Profesional modifica la fecha sugerida (Process Set Treatment)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/settreatment",
 				"method": "POST",
@@ -59,7 +59,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Reservation created",
+			"name": "2.Confirmar selección inicial/6. Confirmación propuesta   (Process Reservation created)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant",
 				"method": "POST",
@@ -79,7 +79,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Reservation Edited",
+			"name": "7. Editar propuesta (Process Reservation Edited)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/5",
 				"method": "PUT",
@@ -99,7 +99,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Reservation Edited copy",
+			"name": "8.Elimina reserva (Process Reservation Edited copy)",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/5",
 				"method": "DELETE",
