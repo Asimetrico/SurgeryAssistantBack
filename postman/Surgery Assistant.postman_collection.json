@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Surgery Assistant",
+		"_postman_id": "0a20c4bd-3497-de22-952a-e4fbe1c5a324",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Process Info",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "\t\t"
+			},
+			"response": []
+		}
+	]
+}
