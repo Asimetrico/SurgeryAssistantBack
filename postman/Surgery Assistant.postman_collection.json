@@ -30,12 +30,104 @@
 			"response": []
 		},
 		{
+			"name": "Process Set Dates",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant/setdates",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"processId\":\"5\",\n\t\"treatment\": [\n\t\t{\n\t\t\t\"treatmentId\":\"1234\",\n\t\t\t\"value\":13\n\t\t},\n\t\t{\n\t\t\t\"treatmentId\":\"5678\",\n\t\t\t\"value\":4\n\t\t}\n\t\t]\n}"
+				},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Process Set Dates copy",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant/settreatment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"processId\":\"5\",\n\t\"date\":\"25/12/2021\"\n}\n"
+				},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
 			"name": "Process Reservation Edited",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/5",
 				"method": "PUT",
-				"header": [],
-				"body": {},
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"description": "\n",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Process Reservation Edited copy",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"description": "\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
 				"description": "\t\t"
 			},
 			"response": []
