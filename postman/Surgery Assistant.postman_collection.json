@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Surgery Assistant",
-		"_postman_id": "0a20c4bd-3497-de22-952a-e4fbe1c5a324",
+		"_postman_id": "c832e8c6-ec06-5d3b-5176-d7f4b71d0911",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -10,8 +10,30 @@
 		{
 			"name": "Process Info",
 			"request": {
-				"url": "",
+				"url": "localhost:9875/api/surgeryassistant/5",
 				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Process Reservation created",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
+			"name": "Process Reservation Edited",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant/5",
+				"method": "PUT",
 				"header": [],
 				"body": {},
 				"description": "\t\t"
