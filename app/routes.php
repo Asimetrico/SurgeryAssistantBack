@@ -6,6 +6,7 @@ declare(strict_types=1);
     use App\Application\Actions\Process\InfoProcessAction;
     use App\Application\Actions\Process\CreatedProcessAction;
     use App\Application\Actions\Process\SetDatesProcessAction;
+    use App\Application\Actions\Process\SetTreatmentProcessAction;
     use App\Application\Actions\Treatment\TreatmentAction;
     use App\Application\Actions\User\ListUsersAction;
 use App\Application\Actions\User\ViewUserAction;
@@ -28,7 +29,7 @@ return function (App $app) {
     $app->group('/api/surgeryassistant', function (Group $group) {
         $group->get('/{id}', InfoProcessAction::class);
         $group->post('/setdates', SetDatesProcessAction::class);
-        $group->post('/settreatments', CreatedProcessAction::class);
+        $group->post('/settreatment', SetTreatmentProcessAction::class);
         $group->post('', CreatedProcessAction::class);
         $group->put('/{id}', EditedProcessAction::class);
         $group->delete('/{id}', DeleteProcessAction::class);
