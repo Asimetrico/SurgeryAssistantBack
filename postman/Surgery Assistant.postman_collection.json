@@ -19,17 +19,6 @@
 			"response": []
 		},
 		{
-			"name": "Process Reservation created",
-			"request": {
-				"url": "localhost:9875/api/surgeryassistant",
-				"method": "POST",
-				"header": [],
-				"body": {},
-				"description": "\t\t"
-			},
-			"response": []
-		},
-		{
 			"name": "Process Set Dates",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/setdates",
@@ -50,7 +39,7 @@
 			"response": []
 		},
 		{
-			"name": "Process Set Dates copy",
+			"name": "Process Set Treatment",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/settreatment",
 				"method": "POST",
@@ -70,6 +59,26 @@
 			"response": []
 		},
 		{
+			"name": "Process Reservation created",
+			"request": {
+				"url": "localhost:9875/api/surgeryassistant",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"processId\":\"5\",\n\t\"date\":\"25/12/2021\",\n\t\"treatment\": [\n\t\t{\n\t\t\t\"treatmentId\":\"1234\",\n\t\t\t\"value\":13\n\t\t},\n\t\t{\n\t\t\t\"treatmentId\":\"5678\",\n\t\t\t\"value\":4\n\t\t}\n\t\t]\n}"
+				},
+				"description": "\t\t"
+			},
+			"response": []
+		},
+		{
 			"name": "Process Reservation Edited",
 			"request": {
 				"url": "localhost:9875/api/surgeryassistant/5",
@@ -77,21 +86,13 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+						"value": "application/json",
 						"description": ""
 					}
 				],
 				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "",
-							"value": "",
-							"description": "\n",
-							"type": "text",
-							"disabled": true
-						}
-					]
+					"mode": "raw",
+					"raw": "{\n\t\"processId\":\"5\",\n\t\"date\":\"25/12/2021\",\n\t\"treatment\": [\n\t\t{\n\t\t\t\"treatmentId\":\"1234\",\n\t\t\t\"value\":13\n\t\t},\n\t\t{\n\t\t\t\"treatmentId\":\"5678\",\n\t\t\t\"value\":5\n\t\t}\n\t\t]\n}"
 				},
 				"description": "\t\t"
 			},
