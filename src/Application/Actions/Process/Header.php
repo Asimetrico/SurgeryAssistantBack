@@ -18,7 +18,7 @@
                 'patientName'=> 'García Gómez, Anna',
                 'patientImage' => base64_encode($img),
                 'doctorId'=>'NIKPOL',
-                'doctorNane'=>'Polyzos, Nikolaos'
+                'doctorName'=>'Polyzos, Nikolaos'
             ];
         }
     }
