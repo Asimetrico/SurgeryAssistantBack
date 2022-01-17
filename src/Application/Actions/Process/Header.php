@@ -8,21 +8,21 @@
     {
         public function processInfo(int $processId): array
         {
-            $img = __DIR__.'../../../../resources/assets/patientimage.jpg';
+            $img = __DIR__.'/assets/patientimage.jpg';
 
             if ($processId === 2){
-                $status = 'close';
+                $status = 'R';
             }else{
-                $status = 'open';
+                $status = 'P';
             }
 
             return [
                 'processId'=> $processId,
-                'processStatus' => $status,
+                'surgeryStatus' => $status,
                 'processType'=> 'Crio Transferencia',
                 'patientId'=> 2020121212,
                 'patientName'=> 'García Gómez, Anna',
-                'patientImage' => base64_encode($img),
+                'patientImage' => base64_encode(file_get_contents($img)),
                 'doctorId'=>'NIKPOL',
                 'doctorName'=>'Polyzos, Nikolaos'
             ];
