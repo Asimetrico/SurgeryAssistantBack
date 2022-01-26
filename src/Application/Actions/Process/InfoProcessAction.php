@@ -22,6 +22,7 @@
                 'header'=> $header->processInfo($processId),
                 'treatments' => $treatments->listBaseTreatments($processId),
                 'dates' => $dates->listBaseDates($processId),
+                'datekeys' => $dates->dateColorKeys(),
             ];
 
             $this->logger->info("get process info.");
